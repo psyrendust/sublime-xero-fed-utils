@@ -1,0 +1,35 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+var viewModel = {
+  /* Enables the new object to return a custom view. */
+  getView: function() {},
+
+  /* Allows the previous object to cancel deactivation. */
+  canDeactivate: function() {},
+
+  /* Allows the new object to cancel activation. */
+  canActivate: function() {},
+
+  /* Allows the previous object to execute custom deactivation logic. */
+  deactivate: function() {},
+
+  /* Allows the new object to execute custom activation logic. */
+  activate: function() {},
+
+  /* Notifies the new object immediately before databinding occurs. */
+  beforeBind: function() {},
+
+  /* Notifies the new object immediately after databinding occurs. */
+  afterBind: function() {},
+
+  /* Notifies the new object when its view is attached to its parent DOM node. */
+  viewAttached: function() {}
+};
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>viewModel</tabTrigger>
+  <description>Generate a skeleton viewModel object</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+</snippet>
